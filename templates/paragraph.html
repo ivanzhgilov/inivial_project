@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+        <div>
+            <p><center><b> {{ materials[0] }} </b></center></p>
+        </div>
+        {% for text in materials[1:] %}
+        <div>
+            <p> {{ text }} </p>
+        </div>
+        {% endfor %}
+    </body>
+{% endblock %}

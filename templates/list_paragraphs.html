@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+    <div>
+        <p><center><b> {{ theme }} </b></center></p>
+    </div>
+    <div>
+        <div><a href="/paragraph/{{ lessons[0] }}"> {{ lessons[0] }} </a></div>
+        <div><p><center><b>Методы решений</b></center></p></div>
+        {% for lesson in lessons[1:] %}
+        <div><a href="/paragraph/{{ lesson }}"> {{ lesson }} </a></div>
+        {% endfor %}
+    </div>
+    </body>
+{% endblock %}
