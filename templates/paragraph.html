@@ -2,7 +2,10 @@
 {% block content %}
     <body>
         <div>
-            <p><center><b> {{ materials[0] }} </b></center></p>
+            <a href="/list_paragraphs/{{ home }}"> <h5><center> {{ home }} </center></h5></a>
+        </div>
+        <div>
+            <p><h6><center> {{ materials[0] }} </center></h6></p>
         </div>
         {% for text in materials[1:] %}
         <div>
